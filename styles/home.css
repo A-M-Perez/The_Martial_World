@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#home-header {
+    background-image: url('/img/home_background2.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 85vh;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 1px 5px black;
+}
+ 
+    /* "THE MARTIAL WORLD" TITLE */
+    .title {
+        text-align: center;
+        font-family: 'Cinzel', serif;
+        text-shadow: 0px 0px 10px black;
+    }
+
+        .home-title.title{
+            margin-top: 3%;
+            font-size: 5em;        
+        }
+        
+        .home-title.title-top {
+            font-size: 2.5em;
+        }
+
+    /* BELT "ANIMATED" LOGO DESIGN */
+    .logo-container {
+        margin-top: 3.5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+        #home-logo.logo-container {
+            width: 180px;
+            height: 120px;
+        }
+
+        .logo {
+            background-color: black;
+            animation: pulse 5s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0px 0px 20px black;
+                opacity: 0.9;
+                border: 1px solid #404040;
+            }
+            40%,60% {
+                box-shadow: 0px 0px 20px white;
+                opacity: 1;
+                border: 1px solid black;
+            }
+            100% {
+                box-shadow: 0px 0px 20px black;
+                opacity: .9;
+                border: 1px solid #404040;
+            }
+        }
+
+        .belt-horizontal-tip {
+            height: 20%;
+            width: 30%;
+            margin: 2%;
+        }
+
+        .belt-middle {
+            height: 20%;
+            width: 15%;
+            margin-top: 2%;
+        }
+
+        .belt-vertical-left {   
+            height: 45%;
+            width: 12%;
+            margin-top: -8%;
+            margin-right: 8%;
+            transform: rotate(30deg);
+        }
+
+        .belt-vertical-right {
+            height: 45%;
+            width: 12%;
+            margin-top: -8%;
+            margin-left: 8%;
+            transform: rotate(-30deg);
+    }
+
+    /* SUBTITLE */
+    #subtitle {
+        margin-top: 3%;
+        font-family: 'Crimson Text', serif;
+        font-size: 2em;
+    }
+
+/* "GO TO NEXT" TAB */
+#go-to {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+    .go-to-btn {
+        width: 40%;
+        height: auto;
+        background: linear-gradient(180deg, rgba(50,50,50,1) 0%, rgba(0,0,0,1) 100%);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        text-align: center;
+    }
+
+        .go-to-icon {
+            color: white;
+            font-size: 2.5em;
+            opacity: 0.9;
+        }
+
+/* "SCHOOLS" SECTION */
+#schools-section {
+    margin: 3% 0%;
+    font-family: 'Cinzel', serif;
+    font-size: 2em;
+    text-align: center;   
+}
+
+    .tabs {
+        border: 1px solid black;
+        font-size: 1.5em;
+    }

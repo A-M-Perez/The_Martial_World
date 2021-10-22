@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clickable {
+    cursor: pointer;
+    text-decoration: inherit;
+    color: inherit;
+}
+
+    /* TOP NAVIGATION PANEL */
+    .main-nav-bar {
+        width: 100%;
+        padding-top: 0.5%;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1em;
+        color: black;
+        z-index: 1;
+    }
+        /* SOCIAL NETWORK ICONS */
+        .icons {
+            width: 10%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        /* NAVIGATION PANEL SECTIONS */
+        .main-nav-all {
+            margin-right: 1%;
+            width: 40%;
+            height: 100%;
+            display: flex;
+            font-family: 'IM Fell English SC', serif;
+            font-size: 1.2em;
+        }
+    
+            .main-nav-section {
+                list-style: none;
+                flex: 1;
+                text-align: center;
+                height: 100%;
+            }
+
+                .main-nav-section:hover {
+                    transform: scale(1.2) translateY(-2px);
+                    transition: ease-in-out 0.5s;
+                }
+        
+                .social-icon:hover {
+                    transform: scale(1.5) translateY(1px);
+                    transition: ease-in-out 0.5s;
+                }
